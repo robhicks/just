@@ -1,8 +1,3 @@
-module.exports = {
-  diff: diff,
-  jsonPatchPathConverter: jsonPatchPathConverter,
-};
-
 /*
   const obj1 = {a: 4, b: 5};
   const obj2 = {a: 3, b: 5};
@@ -137,3 +132,5 @@ function pushReplace(path, basePath, key, diffs, pathConverter, obj2) {
 function jsonPatchPathConverter(arrayPath) {
   return [''].concat(arrayPath).join('/');
 }
+
+export {diff, jsonPatchPathConverter};
